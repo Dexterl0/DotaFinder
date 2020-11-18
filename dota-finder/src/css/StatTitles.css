@@ -1,0 +1,4 @@
+.stat-titles {
+    display: flex;
+    justify-content: space-evenly;
+}

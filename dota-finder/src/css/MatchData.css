@@ -1,0 +1,9 @@
+.victory {
+    display: flex;
+    justify-content: center;
+}
+
+.score-time {
+    display: flex;
+    justify-content: space-around;
+}
