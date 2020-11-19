@@ -1,0 +1,11 @@
+.heroes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

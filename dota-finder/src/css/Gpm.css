@@ -1,0 +1,11 @@
+.gpm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gpm-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

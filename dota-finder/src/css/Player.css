@@ -1,0 +1,4 @@
+.player-data {
+    display: flex;
+    justify-content: space-evenly;
+}

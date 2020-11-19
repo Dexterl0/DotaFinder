@@ -1,0 +1,11 @@
+.denies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.denies-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

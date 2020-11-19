@@ -1,0 +1,11 @@
+.building {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.building-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

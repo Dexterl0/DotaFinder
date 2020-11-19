@@ -1,0 +1,11 @@
+.assists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.assists-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

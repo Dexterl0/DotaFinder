@@ -1,0 +1,11 @@
+.deaths {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.deaths-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

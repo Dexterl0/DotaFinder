@@ -1,0 +1,11 @@
+.xpm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.xpm-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

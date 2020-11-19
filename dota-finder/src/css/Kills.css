@@ -1,0 +1,11 @@
+.kills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kills-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

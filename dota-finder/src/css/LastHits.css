@@ -1,0 +1,11 @@
+.last-hits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.last-hits-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

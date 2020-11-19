@@ -2,3 +2,9 @@
     display: flex;
     justify-content: center;
 }
+
+.radiant-data {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}

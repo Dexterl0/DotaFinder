@@ -1,0 +1,11 @@
+.gold {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gold-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
