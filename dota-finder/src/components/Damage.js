@@ -1,16 +1,17 @@
 import React from 'react';
 import '../css/Damage.css';
 
-const Damage = () => {
+const Damage = ({ teamData, matchDataLoaded }) => {
+
+    const getPlayerDamage = () => {
+        return teamData.map(player => <p className="damage-score" key={player.hero_id}>{player.hero_damage}</p>)
+    }
+
     return (
         <div className="damage">
-            <h4>DMG</h4>
-            <div className="damage-score">
-                <p>35.5k</p>
-                <p>107.0k</p>
-                <p>34.7k</p>
-                <p>25.3k</p>
-                <p>11.9k</p>
+            <h4 className="damage-title">DMG</h4>
+            <div className="damage-scores">
+                {matchDataLoaded ? getPlayerDamage() : ""}
             </div>
         </div>
     );

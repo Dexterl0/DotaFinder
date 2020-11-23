@@ -4,8 +4,15 @@
     justify-content: center;
 }
 
+.damage-scores {
+    display: grid;
+}
+
+.damage-title {
+    text-align: center;
+}
+
 .damage-score {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-self: center;
+    align-self: center;
 }

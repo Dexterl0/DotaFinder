@@ -4,8 +4,15 @@
     justify-content: center;
 }
 
+.xpm-scores {
+    display: grid;
+}
+
+.xpm-title {
+    text-align: center;
+}
+
 .xpm-score {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-self: center;
+    justify-self: center;
 }

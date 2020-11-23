@@ -1,16 +1,17 @@
 import React from 'react';
 import '../css/Gold.css';
 
-const Gold = () => {
+const Gold = ({ teamData, matchDataLoaded }) => {
+
+    const getPlayerGold = () => {
+        return teamData.map(player => <p className="g-score" key={player.hero_id}>{player.total_gold}</p>)
+    }
+
     return (
         <div className="gold">
-            <h4>Total Gold</h4>
+            <h4 class-Name="gold-title">Total Gold</h4>
             <div className="gold-score">
-                <p>19.8k</p>
-                <p>17.1k</p>
-                <p>10.2k</p>
-                <p>8.0k</p>
-                <p>31.5k</p>
+                {matchDataLoaded ? getPlayerGold() : ""}
             </div>
         </div>
     );

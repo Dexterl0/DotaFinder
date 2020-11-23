@@ -4,8 +4,15 @@
     justify-content: center;
 }
 
-.deaths-score {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.death-score {
+    display: grid;
+}
+
+.death-title {
+    text-align: center;
+}
+
+.d-score {
+    align-self: center;
+    justify-self: center;
 }

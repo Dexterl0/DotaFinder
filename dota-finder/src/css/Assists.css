@@ -5,7 +5,14 @@
 }
 
 .assists-score {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+}
+
+.assists-title {
+    text-align: center;
+}
+
+.a-score {
+    align-self: center;
+    justify-self: center;
 }

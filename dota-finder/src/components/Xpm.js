@@ -1,16 +1,17 @@
 import React from 'react';
 import '../css/Xpm.css';
 
-const Xpm = () => {
+const Xpm = ({ teamData, matchDataLoaded }) => {
+
+    const getPlayerXPM = () => {
+        return teamData.map(player => <p className="xpm-score" key={player.hero_id}>{player.xp_per_min}</p>)
+    }
+
     return (
         <div className="xpm">
-            <h4>XPM</h4>
-            <div className="xpm-score">
-                <p>951</p>
-                <p>429</p>
-                <p>582</p>
-                <p>578</p>
-                <p>678</p>
+            <h4 className="xpm-title">XPM</h4>
+            <div className="xpm-scores">
+                {matchDataLoaded ? getPlayerXPM() : ""}
             </div>
         </div>
     );

@@ -1,16 +1,17 @@
 import React from 'react';
 import '../css/Denies.css';
 
-const Denies = () => {
+const Denies = ({ teamData, matchDataLoaded }) => {
+
+    const getPlayerDenies = () => {
+        return teamData.map(player => <p className="deny-score" key={player.hero_id}>{player.denies}</p>)
+    }
+
     return (
         <div className="denies">
-            <h4>Denies</h4>
+            <h4 className="denies-title">Denies</h4>
             <div className="denies-score">
-                <p>15</p>
-                <p>2</p>
-                <p>1</p>
-                <p>21</p>
-                <p>2</p>
+                {matchDataLoaded ? getPlayerDenies() : ""}
             </div>
         </div>
     );

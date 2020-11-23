@@ -1,16 +1,18 @@
 import React from 'react';
 import '../css/Kills.css';
 
-const Kills = () => {
+const Kills = ({ teamData, matchDataLoaded }) => {
+
+    //Functions
+    const getPlayerKillScore = () => {
+    return teamData.map(player => <p className="k-score" key={player.hero_id}>{player.kills}</p>)
+    }
+
     return (
         <div className="kills">
-            <h4>K</h4>
+            <h4 className="kill-title">K</h4>
             <div className="kill-score">
-                <p>22</p>
-                <p>5</p>
-                <p>6</p>
-                <p>13</p>
-                <p>4</p>
+                {matchDataLoaded ? getPlayerKillScore() : ""}
             </div>
         </div>
     );

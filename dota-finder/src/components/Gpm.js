@@ -1,16 +1,17 @@
 import React from 'react';
 import '../css/Gpm.css';
 
-const Gpm = () => {
+const Gpm = ({ teamData, matchDataLoaded }) => {
+
+    const getPlayerGPM = () => {
+        return teamData.map(player => <p className="gpm-score" key={player.hero_id}>{player.gold_per_min}</p>)
+    }
+
     return (
         <div className="gpm">
-            <h4>GPM</h4>
-            <div className="gpm-score">
-                <p>549</p>
-                <p>756</p>
-                <p>284</p>
-                <p>255</p>
-                <p>306</p>
+            <h4 className="gpm-title">GPM</h4>
+            <div className="gpm-scores">
+                {matchDataLoaded ? getPlayerGPM() : ""}
             </div>
         </div>
     );

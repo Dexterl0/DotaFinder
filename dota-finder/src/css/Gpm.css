@@ -4,8 +4,15 @@
     justify-content: center;
 }
 
+.gpm-scores {
+    display: grid;
+}
+
+.gpm-title {
+    text-align: center;
+}
+
 .gpm-score {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-self: center;
+    justify-self: center;
 }

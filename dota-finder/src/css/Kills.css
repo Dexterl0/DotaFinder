@@ -1,11 +1,19 @@
 .kills {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    height: 100%
 }
 
-.kills-score {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.kill-score {
+    display: grid;
+    height: 100%
+}
+
+.kill-title {
+    text-align: center;
+}
+
+.k-score {
+    justify-self: center;
+    align-self: center;
 }

@@ -1,16 +1,17 @@
 import React from 'react';
 import '../css/Deaths.css';
 
-const Deaths = () => {
+const Deaths = ({ teamData, matchDataLoaded }) => {
+
+    const getPlayerDeathScore = () => {
+        return teamData.map(player => <p className="d-score" key={player.hero_id}>{player.deaths}</p>)
+    }
+
     return (
         <div className="deaths">
-            <h4>D</h4>
+            <h4 className="death-title">D</h4>
             <div className="death-score">
-                <p>11</p>
-                <p>10</p>
-                <p>23</p>
-                <p>19</p>
-                <p>14</p>
+                {matchDataLoaded ? getPlayerDeathScore() : ""}
             </div>
         </div>
     );

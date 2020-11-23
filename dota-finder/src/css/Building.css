@@ -4,8 +4,15 @@
     justify-content: center;
 }
 
+.building-scores {
+    display: grid;
+}
+
+.building-title {
+    text-align: center;
+}
+
 .building-score {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-self: center;
+    justify-self: center;
 }

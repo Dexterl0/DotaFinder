@@ -1,16 +1,17 @@
 import React from 'react';
 import '../css/LastHits.css';
 
-const LastHits = () => {
+const LastHits = ({ teamData, matchDataLoaded }) => {
+
+    const getPlayerLastHits = () => {
+        return teamData.map(player => <p className="lh-score" key={player.hero_id}>{player.last_hits}</p>)
+    }
+
     return (
         <div className="last-hits">
-            <h4>Last Hits</h4>
+            <h4 className="last-hits-title">Last Hits</h4>
             <div className="last-hits-score">
-                <p>27</p>
-                <p>255</p>
-                <p>471</p>
-                <p>328</p>
-                <p>53</p>
+                {matchDataLoaded ? getPlayerLastHits() : ""}
             </div>
         </div>
     );

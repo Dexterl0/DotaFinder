@@ -4,8 +4,15 @@
     justify-content: center;
 }
 
+.healing-scores {
+    display: grid;
+}
+
+.healing-title {
+    text-align: center;
+}
+
 .healing-score {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-self: center;
+    justify-self: center;
 }
